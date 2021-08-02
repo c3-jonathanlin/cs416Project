@@ -1,0 +1,23 @@
+.content {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.carousel-caption {
+ background: rgba(0, 0, 0, 0.3);
+}
+.carousel-control-next {
+  background: rgba(0, 0, 0, 0.5);
+}
+.carousel-control-prev {
+  background: rgba(0, 0, 0, 0.5);
+}
