@@ -10,7 +10,7 @@ var svg3 = d3.select("#scene3")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("https://raw.githubusercontent.com/c3-jonathanlin/cs498Project/master/data/vaccination_ca_july.csv", function (data) {
+d3.csv("https://raw.githubusercontent.com/c3-jonathanlin/cs416Project/master/data/vaccination_ca_july.csv", function (data) {
   var x3 = d3.scaleLinear()
     .domain([-1, 1])
     .range([ 0, width ]);

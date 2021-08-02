@@ -38,7 +38,7 @@ var mouseleave = function (d) {
         .style("opacity", 0)
 }
 
-d3.csv("https://raw.githubusercontent.com/c3-jonathanlin/cs498Project/master/data/vaccination_ca_april.csv", function (data) {
+d3.csv("https://raw.githubusercontent.com/c3-jonathanlin/cs416Project/master/data/vaccination_ca_april.csv", function (data) {
   var x2 = d3.scaleLinear()
     .domain([-1, 1])
     .range([ 0, width ]);
