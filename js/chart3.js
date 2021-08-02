@@ -10,7 +10,7 @@ var svg3 = d3.select("#scene3")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-var tooltip3 = d3.select("#scene2")
+var tooltip3 = d3.select("#scene3")
     .append("div")
     .style("opacity", 0)
     .attr("class", "tooltip")
@@ -26,7 +26,7 @@ var mouseover3 = function (d) {
 
 var mousemove3 = function (d) {
     tooltip3
-        .html("County: " + d.county)
+        .html("County: " + d.county + '<br>Vote Margin: ' + d.vote_diff + '<br>Vaccination Rate: ' + d.cumulative_at_least_one_dose_per_capita)
         .style("left", (d3.mouse(this)[0]+150) + "px")
         .style("top", (d3.mouse(this)[1]+100) + "px")
 }

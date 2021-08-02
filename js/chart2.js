@@ -26,7 +26,7 @@ var mouseover = function (d) {
 
 var mousemove = function (d) {
     tooltip
-        .html("County: " + d.county)
+        .html("County: " + d.county + '<br>Vote Margin: ' + d.vote_diff + '<br>Vaccination Rate: ' + d.cumulative_at_least_one_dose_per_capita)
         .style("left", (d3.mouse(this)[0]+150) + "px")
         .style("top", (d3.mouse(this)[1]+100) + "px")
 }
